@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+header{
+    background-color: #333333;
+    padding: 10px;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+}
+
+.row{
+    display: flex;
+}
+
+.header__logo, .header__page, .header__loginned-user{
+    width: 30%;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.header__logo{
+    font-size: 18px;
+}
+
+.header__page{
+    text-align: center;
+}
+
+.header__loginned-user{
+    text-align: right;
+}
+
+.navigation{
+    background-color: #333333;
+    height: calc(100vh - 62px);
+    flex-direction: column;
+    justify-content: space-between;
+    width: 220px;
+    padding: 10px;
+}
+
+nav{
+    flex-direction: column;
+    gap: 15px;
+}
+
+nav a, #logout-btn{
+    display: block;
+    color: white;
+    text-decoration: none;
+    border: 2px solid #D9D9D9;
+    border-radius: 8px;
+    height: 35px;
+    text-align: center;
+    line-height: 31px;
+    font-size: 20px;
+    font-weight: 600;
+    background: none;
+    width: 100%;
+    cursor: pointer;
+}
+
+nav a.active{
+    border: 2px solid #DFC645;
+    color: #DFC645;
+}
+
+.panel{
+    padding: 10px;
+    width: 100%;
+}
+
+.panel__header{
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.panel__header-search{
+    gap: 35px;
+}
+
+.panel__header-search form{
+    gap: 10px;
+}
+
+.panel__header-search input, .panel__header-search button, #add-btn{
+    display: block;
+    gap: 30px;
+    height: 35px;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 16px;
+    padding: 0 10px;
+}
+
+.panel__header-search input{
+    max-width: 300px;
+    width: 100%;
+}
+
+.panel__content h1{
+    margin-bottom: 15px;
+}
