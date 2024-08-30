@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/products.css">
+    <title>products</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="row">
+            <div class="header__logo">ZDRXT.SHP<br>ADMIN PANEL</div>
+
+            <p class="header__page">Products</p>
+
+            <p class="header__loginned-user">user</p>
+        </header>
+
+        <main>
+            <div class="crm row">
+                <div class="navigation row">
+                    <nav class="row">
+                        <a href="./orders.html">Orders</a>
+                        <a href="./products.html" class="active">Products</a>
+                        <a href="./reviews.html">Reviews</a>
+                        <a href="./moderators.html">Moderators</a>
+                    </nav>
+
+                    <footer>
+                        <button id="logout-btn">Log Out</button>
+                    </footer>
+                </div>
+
+                <section class="panel">
+                    <div class="panel__header row">
+                        <div class="panel__header-search row">
+                            <form id="search-product" class="row">
+                                <input type="text" placeholder="Find product">
+
+                                <button>Search</button>
+                            </form>
+
+                            <form id="search-id" class="row">
+                                <input type="text" placeholder="Find ID">
+
+                                <button>Search</button>
+                            </form>
+                        </div>
+
+                        <button id="add-btn">Add</button>
+                    </div>
+
+                    <div class="panel__content">
+                        <h1>All products</h1>
+
+                        <div class="panel__content-box">
+                            <div class="content-box__product row">
+                                <div class="product__gallery row">
+                                    <img src="https://zdrxt-shp.vercel.app/src/images/products/t-shirts/id4p1.jpeg"
+                                        class="product__gallery-main">
+
+                                    <div class="product__gallery-other row">
+                                        <img src="https://zdrxt-shp.vercel.app/src/images/products/t-shirts/id4p1.jpeg">
+                                        <img src="https://zdrxt-shp.vercel.app/src/images/products/t-shirts/id4p2.jpeg">
+                                    </div>
+                                </div>
+
+                                <div class="product__info">
+                                    <h3 class="product__info-title">Cooked t-shirt with an inscription</h3>
+
+                                    <p class="product__info-descr">Boiled T-shirt with a round collar and short sleeves.
+                                        Contrast print on the front.</p>
+
+                                    <div class="product__info-sizes row">
+                                        [ S, M, L, XL ]
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="product__info-discount">$21.00</div>
+
+                                        <div class="product__info-price">$23.45</div>
+                                    </div>
+                                </div>
+
+                                <div class="product__control">
+                                    <button class="product__control-edit">Edit</button>
+
+                                    <button class="product__control-remove">Remove</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
