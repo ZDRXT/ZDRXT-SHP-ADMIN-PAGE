@@ -1,5 +1,11 @@
 import { getInfo, deleteInfoById, updateInfoById } from "../service/service.js";
 
+import checkUser from "../service/verif.js";
+import logout from "../service/logout.js";
+
+checkUser()
+logout()
+
 let panelContentBox = document.querySelector(".panel__content-box")
 
 let allSelects

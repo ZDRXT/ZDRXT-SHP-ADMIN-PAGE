@@ -27,4 +27,15 @@ async function updateInfoById(mockApi, route, id, value) {
 	return data
 }
 
-export { getInfo, deleteInfoById, updateInfoById }
+function getDataLS(key) {
+	let data = localStorage.getItem(key)
+
+	if (data) return JSON.parse(data)
+	return null
+}
+
+function saveDataLS(key, data) {
+	localStorage.setItem(key, JSON.stringify(data))
+}
+
+export { getInfo, deleteInfoById, updateInfoById, getDataLS, saveDataLS }

@@ -84,6 +84,20 @@ nav a.active{
     padding: 10px;
     width: 100%;
     background-color: white;
+    position: relative;
+}
+
+.panel__spinner{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
 }
 
 .panel__header{
@@ -117,4 +131,8 @@ nav a.active{
 
 .panel__content h1{
     margin-bottom: 15px;
+}
+
+.spinner-disabled{
+    display: none;
 }
