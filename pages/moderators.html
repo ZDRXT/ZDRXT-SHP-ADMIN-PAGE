@@ -47,9 +47,79 @@
 
                     <div class="panel__content">
                         <div class="panel__content-box">
+                            <div class="moderator">
+                                <p class="user">Arsen Makukh</p>
 
+                                <div class="comment-container">
+                                    <button class="edit-moder">Edit</button>
+                                    <button class="remove-moder">Remove</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
+
+                    <div class="modal">
+						<div class="modal__window">
+							<form action="">
+                                <div class="modal-box">
+                                    <div class="left">
+                                        <div class="modal__window-item modal__window-fullName">
+                                            <label for="fullName">Full Name</label>
+                                            <input type="text" id="fullName" required>
+                                        </div>
+        
+                                        <div class="modal__window-item modal__window-email">
+                                            <label for="email">Email</label>
+                                            <input type="text" id="email" required>
+                                        </div>
+        
+                                        <div class="modal__window-item modal__window-phone">
+                                            <label for="phone">Img SRCs</label>
+        
+                                            <input type="text" id="phone" required>
+                                        </div>
+                                    </div>
+    
+                                    <div class="right">
+                                        <div class="modal__window-item modal__window-roles">
+                                            <label>Roles</label>    
+                                            
+                                            <select class="role-list__select">
+                                                <option value="Owner">Owner</option>
+
+                                                <option value="Moderator">Moderator</option>
+        
+                                                <option value="Admin">Admin</option>
+        
+                                                <option value="Seller">Seller</option>
+        
+                                                <option value="Helper">Helper</option>
+                                            </select>
+                                        </div>
+        
+                                        <div class="modal__window-item modal__window-login">
+                                            <label for="login">Login</label>
+                                            
+                                            <input type="text" id="login" required>
+                                        </div>
+        
+                                        <div class="modal__window-item modal__window-password">
+                                            <label for="password">Login</label>
+                                            
+                                            <input type="text" id="password" required>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <p class="modal__window-last-login"></p>
+
+                                <div class="buttons">
+                                    <button class="cancell-modal" type="button">Cancell</button>
+                                    <button class="done-modal">Done</button>
+                                </div>
+							</form>
+						</div>
+					</div>
                 </section>
             </div>
         </main>

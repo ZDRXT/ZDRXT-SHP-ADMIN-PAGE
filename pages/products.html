@@ -2,107 +2,155 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/style.css">
-    <link rel="stylesheet" href="../styles/products.css">
-    <title>products</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../styles/style.css">
+	<link rel="stylesheet" href="../styles/products.css">
+	<title>products</title>
 </head>
 
 <body>
-    <div class="container">
-        <header class="row">
-            <div class="header__logo">ZDRXT.SHP<br>ADMIN PANEL</div>
+	<div class="container">
+		<header class="row">
+			<div class="header__logo">ZDRXT.SHP<br>ADMIN PANEL</div>
 
-            <p class="header__page">Products</p>
+			<p class="header__page">Products</p>
 
-            <p class="header__loginned-user">user</p>
-        </header>
+			<p class="header__loginned-user">user</p>
+		</header>
 
-        <main>
-            <div class="crm row">
-                <div class="navigation row">
-                    <nav class="row">
-                        <a href="./orders.html">Orders</a>
-                        <a href="./products.html" class="active">Products</a>
-                        <a href="./reviews.html">Reviews</a>
-                        <a href="./moderators.html">Moderators</a>
-                    </nav>
+		<main>
+			<div class="crm row">
+				<div class="navigation row">
+					<nav class="row">
+						<a href="./orders.html">Orders</a>
+						<a href="./products.html" class="active">Products</a>
+						<a href="./reviews.html">Reviews</a>
+						<a href="./moderators.html">Moderators</a>
+					</nav>
 
-                    <footer>
-                        <button id="logout-btn">Log Out</button>
-                    </footer>
-                </div>
+					<footer>
+						<button id="logout-btn">Log Out</button>
+					</footer>
+				</div>
 
-                <section class="panel">
-                    <div class="panel__spinner">
-                        <img src="../imgs/Spinner.svg" alt="loading...">
-                    </div>
+				<section class="panel">
+					<div class="panel__spinner">
+						<img src="../imgs/Spinner.svg" alt="loading...">
+					</div>
 
-                    <div class="panel__header row">
-                        <div class="panel__header-search row">
-                            <form id="search-product" class="row">
-                                <input type="text" placeholder="Find product">
+					<div class="panel__header row">
+						<div class="panel__header-search row">
+							<form id="search-product" class="row">
+								<input class="search-product__inp" type="text" placeholder="Find product">
 
-                                <button>Search</button>
-                            </form>
+								<button>Search</button>
+							</form>
 
-                            <form id="search-id" class="row">
-                                <input type="text" placeholder="Find ID">
+							<form id="search-id" class="row">
+								<input class="search-id__inp" type="number" placeholder="Find ID">
 
-                                <button>Search</button>
-                            </form>
-                        </div>
+								<button>Search</button>
+							</form>
+						</div>
 
-                        <button id="add-btn">Add</button>
-                    </div>
+						<button id="add-btn">Add</button>
+					</div>
 
-                    <div class="panel__content">
-                        <h1>All products</h1>
+					<div class="panel__content">
+						<h1>All products</h1>
 
-                        <div class="panel__content-box">
-                            <div class="content-box__product row">
-                                <div class="product__gallery row">
-                                    <img src="https://zdrxt-shp.vercel.app/src/images/products/t-shirts/id4p1.jpeg"
-                                        class="product__gallery-main">
+						<div class="panel__content-box">
 
-                                    <div class="product__gallery-other row">
-                                        <img src="https://zdrxt-shp.vercel.app/src/images/products/t-shirts/id4p1.jpeg">
-                                        <img src="https://zdrxt-shp.vercel.app/src/images/products/t-shirts/id4p2.jpeg">
-                                    </div>
-                                </div>
+						</div>
+					</div>
 
-                                <div class="product__info">
-                                    <h3 class="product__info-title">Cooked t-shirt with an inscription</h3>
+					<div class="modal">
+						<div class="modal__window">
+							<form action="">
+								<div class="left">
+									<div class="modal__window-title">
+										<label for="title">Title</label>
+										<input type="text" id="title">
+									</div>
+	
+									<div class="modal__window-description">
+										<label for="description">Description</label>
+										<input type="text" id="description">
+									</div>
+	
+									<div class="modal__window-imgs">
+										<label for="imgs">Img SRCs</label>
+	
+										<div class="imgs">
+											<input type="text" id="imgs">
+											<input type="text" id="imgs">
+											<input type="text" id="imgs">
+										</div>
+									</div>
+								</div>
 
-                                    <p class="product__info-descr">Boiled T-shirt with a round collar and short sleeves.
-                                        Contrast print on the front.</p>
+								<div class="right">
+									<div class="modal__window-categories">
+										<h3>Category</h3>
+										
+										<select class="categories-list__select">
+											<option value="t-shirt">T-Shirt</option>
+	
+											<option value="shirts">Shirt</option>
+	
+											<option value="pants">Pants</option>
+	
+											<option value="accesories">Accesories</option>
+										</select>
+									</div>
+	
+									<div class="modal__window-price">
+										<h3>Price</h3>
+										<div class="price-list">
+											<div class="price-row">
+												<div class="price-item w-30 dolar full-price"><input class="full-price-inp" type="text"/></div>
+												<div class="price-discount-label">Discount</div>
+											</div>
+	
+											<div class="price-row">
+												<div class="price-item w-30 dolar disc-price"><input class="disc-price-inp" type="text"/></div>
+												<div class="price-discount-controls w-30">
+													<input type="radio" id="discount-off" name="discount" />
+													<label for="discount-off">Off</label>
+	
+													<input type="radio" id="discount-on" name="discount" />
+													<label for="discount-on">On</label>
+												</div>
+												<div class="price-discount-percent w-30 percent"><input class="price-discount-percent__input" type="text"/></div>
+											</div>
+	
+											<div class="price-row">
+												<div class="price-total-label w-30">Total</div>
+												<div class="price-total dolar"><input type="text" readonly/></div>
+											</div>
+										</div>
+									</div>
+	
+									<p class="modal-prod__date">Created <span></span></p>
+	
+									<div class="last-box">
+										<p class="box-id">Id: <span class="id">1</span></p>
+	
+										<button class="cancell-btn" type="button">Cancell</button>
+										
+										<button class="done-btn">Done</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</section>
+			</div>
+		</main>
+	</div>
 
-                                    <div class="product__info-sizes row">
-                                        [ S, M, L, XL ]
-                                    </div>
-
-                                    <div class="row">
-                                        <div class="product__info-discount">$21.00</div>
-
-                                        <div class="product__info-price">$23.45</div>
-                                    </div>
-                                </div>
-
-                                <div class="product__control">
-                                    <button class="product__control-edit">Edit</button>
-
-                                    <button class="product__control-remove">Remove</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </main>
-    </div>
-
-    <script src="../scripts/products.js" type="module"></script>
+	<script src="../scripts/products.js" type="module"></script>
 </body>
 
 </html>
